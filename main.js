@@ -48,7 +48,6 @@ function addRound() {
   presentActors.sort(function(a, b) {
     return(rollWithTiebreaker(b) - rollWithTiebreaker(a));
   });
-  console.log(presentActors);
 
   for (var i = 0; i < presentActors.length; i++) {
     if (table.rows.length <= i+1) {
@@ -63,7 +62,6 @@ function addRound() {
 
   // Create empty cells past current actor list
   for (var i = presentActors.length; i < table.rows.length; i++) {
-    console.log(i);
     var row = table.rows[i];
     while(row.cells.length < currentRound) {
       row.insertCell();
@@ -85,7 +83,6 @@ function addActor() {
     dexterity = 0;
   }
   var actor = new Actor(name, initiative, dexterity)
-  console.log(actor);
   actors.push(actor);
   addActorToTable(actor);
 }
