@@ -10,8 +10,10 @@ actors = [
   new Actor("Mooks", 0, 0)
 ];
 
-for (var i = 0; i < actors.length; i++) {
-  addActorToTable(actors[i], i)
+window.onload=function() {
+  for (var i = 0; i < actors.length; i++) {
+    addActorToTable(actors[i], i)
+  }
 }
 
 function d20() {
