@@ -2,9 +2,10 @@ currentRound = 0;
 lastActorId = 0;
 
 actors = [
-  new Actor("Jo", 2, 1),
+  new Actor("Jo Spirit", 2, 1),
+  new Actor("Jo Body", 5, 4),
   new Actor("Beth", 0, 0),
-  new Actor("Artemis", 2, 2),
+  new Actor("Artemis", 2, 1),
   new Actor("Michael", 1, 1),
   new Actor("Big Bad", 1, 1),
   new Actor("Mooks", 0, 0)
