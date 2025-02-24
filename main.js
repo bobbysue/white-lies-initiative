@@ -59,6 +59,7 @@ function addRound() {
       row.insertCell();
     }
     row.cells[currentRound-1].innerHTML = presentActors[i].name + " (" + presentActors[i].roll + ")";
+    row.cells[currentRound-1].style.textAlign = "left";
   }
 
   // Create empty cells past current actor list
@@ -67,6 +68,17 @@ function addRound() {
     while(row.cells.length < currentRound) {
       row.insertCell();
     }
+  }
+}
+
+function removeRound() {
+  if (currentRound === 0) {
+    return;
+  }
+  currentRound -= 1;
+  var table = document.getElementById("initiativeTable");
+  for (var i = 0; i < table.rows.length; i++) {
+    table.rows[i].deleteCell(-1);
   }
 }
 
