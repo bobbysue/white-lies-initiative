@@ -9,7 +9,7 @@
 <table id="actorTable">
   <tr>
     <td><b> Actor </b></td>
-    <td><input type='text' id='newName' style='width: 50px'>
+    <td><input type='text' id='newActorName' style='width: 50px'>
   </tr>
   <tr>
     <td><b> Initiative </b></td>
@@ -27,6 +27,19 @@
     <td></td>
     <td><button type="button" onclick="addActor()">Add Actor</button></td>
   </tr>
+</table>
+<br>
+
+<table id="damageTable">
+  <tr>
+    <td><b> Name </b></td>
+    <td><b> HP </b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><input type='text' id='newDamageTakerName' style='width: 50px'></td>
+    <td><input type='text' id='newHP'> / <input type='text' id='newMaxHP'></td>
+    <td colspan=4><button type="button" onclick="addDamageTaker()">Add Damage Taker</button></td>
 </table>
 <br>
 
